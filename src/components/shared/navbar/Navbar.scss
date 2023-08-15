@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #262b46;
+  color: #fff;
+  height: 50vh;
+}
+
+.navbar div {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.navbar h2 {
+  font-family: playfairDisplay;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.navbar img {
+  height: 20px;
+}
+
+.navbar h1 {
+  font-family: playfairDisplay;
+  font-weight: 400;
+  font-size: 3rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.navbar p {
+  font-family: montserrat;
+  font-weight: 400;
+  font-style: 1rem;
+  padding: 0 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.navbar form {
+  padding-left: 2rem;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar input {
+  font-family: montserrat;
+  line-height: 2rem;
+  color: #262b46;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.navbar button {
+  font-family: montserrat;
+  border: 1px solid black;
+  line-height: 2rem;
+  padding: 0 8%;
+  border-radius: 10px;
+  background-color: #6fc3df;
+  color: #262b46;
+}
