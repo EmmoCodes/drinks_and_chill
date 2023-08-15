@@ -9,13 +9,11 @@ import DrinksList from './components/pages/DrinksList/DrinksList'
 function App() {
   return (
     <>
-
       <Navbar />
       <Routes>
         <Route path="/" element={<DrinksList />} />
       </Routes>
       <Footer />
-
     </>
   )
 }

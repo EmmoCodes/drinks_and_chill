@@ -1,4 +1,4 @@
-export const getAllDrinks = (apiLink, setState, key) => {
+export const getAllDrinks = (apiLink, setState) => {
   fetch(apiLink)
     .then(response => {
       if (!response.ok) {
@@ -6,6 +6,6 @@ export const getAllDrinks = (apiLink, setState, key) => {
       }
       return response.json()
     })
-    .then(response => (key ? setState(response[key]) : setState(response)))
+    .then(response => setState(response.drinks))
     .catch(error => console.log(error.message))
 }
