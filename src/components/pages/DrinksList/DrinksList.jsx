@@ -20,7 +20,7 @@ function DrinksList() {
   }
 
   return (
-    <section>
+    <section className="drink_list">
       {drinks.map(drink => (
         <DrinksItem key={drink.idDrink} drink={drink} />
       ))}
