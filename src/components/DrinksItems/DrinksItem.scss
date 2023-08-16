@@ -7,37 +7,43 @@
   align-items: center;
 }
 
-.drinks_item:nth-of-type(odd) {
-  background-color: rgba(128, 128, 128, 0.431);
-  img {
-    width: 220px;
-    object-fit: contain;
-    padding-left: 1rem;
-  }
-  h2 {
-    color: #000;
-    font-family: montserrat;
-    writing-mode: vertical-rl;
-    text-align: center;
-    height: 70%;
+.drinks_item_link:nth-of-type(odd) {
+  .drinks_item {
     padding-right: 4rem;
+    background-color: rgba(128, 128, 128, 0.431);
+    img {
+      width: 220px;
+      object-fit: contain;
+      padding-left: 1rem;
+    }
+    h2 {
+      transform: rotate(180deg);
+      color: #000;
+      font-family: montserrat;
+      writing-mode: vertical-rl;
+      text-align: center;
+      height: 70%;
+    }
   }
 }
 
-.drinks_item:nth-of-type(even) {
-  background-color: #262b46;
-  img {
-    order: 2;
-    width: 220px;
-    object-fit: contain;
-    padding-right: 1rem;
-  }
-  h2 {
-    color: #ffffff;
-    font-family: montserrat;
-    writing-mode: vertical-rl;
-    text-align: center;
-    height: 70%;
+.drinks_item_link:nth-of-type(even) {
+  .drinks_item {
     padding-left: 4rem;
+    background-color: #262b46;
+    img {
+      order: 2;
+      width: 220px;
+      object-fit: contain;
+      padding-right: 1rem;
+    }
+    h2 {
+      transform: rotate(180deg);
+      color: #ffffff;
+      font-family: montserrat;
+      writing-mode: vertical-rl;
+      text-align: center;
+      height: 70%;
+    }
   }
 }

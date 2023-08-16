@@ -15,7 +15,6 @@ function DrinksDetails() {
   if (!detailId) {
     return <p>Is Loading ....</p>
   }
-  console.log(drinkDetails)
 
   return (
     <section>

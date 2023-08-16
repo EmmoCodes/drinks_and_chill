@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { apiLink } from '../../../utils/Api/Api'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks'
 import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
+import './DrinksList.scss'
 
 function DrinksList() {
   const [drinks, setDrinks] = useState([])
@@ -12,8 +13,6 @@ function DrinksList() {
   useEffect(() => {
     getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
   }, [])
-
-  console.log(drinks)
 
   if (!ingredient) {
     return <p>is Loading...</p>
