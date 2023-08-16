@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <section className="home">
-      <Link to="cocktails/i=gin">
+      <Link className="home_link" to="cocktails/i=gin">
         <article className="home_gin">
           <h2>Gin</h2>
           <p>Wacholder-geprägter Kräuter-Spirituose</p>
