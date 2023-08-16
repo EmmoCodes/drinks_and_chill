@@ -1,9 +1,12 @@
 import './Home.scss'
 import { Link } from 'react-router-dom'
+import Navbar from '../../shared/navbar/Navbar'
+import Footer from '../../shared/footer/Footer'
 
 const Home = () => {
   return (
     <section className="home">
+      <Navbar />
       <Link className="home_link" to="cocktails/i=gin">
         <article className="home_gin">
           <h2>Gin</h2>
@@ -40,6 +43,7 @@ const Home = () => {
           <p>Unvorhersehbar, ungeplant, überraschend</p>
         </article>
       </Link>
+      <Footer />
     </section>
   )
 }
