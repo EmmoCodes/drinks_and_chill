@@ -10,7 +10,7 @@ function DrinksList() {
   const ingredient = useParams().ingredient
 
   useEffect(() => {
-    getAllDrinks(`${apiLink}/filter.php?i=${ingredient}`, setDrinks)
+    getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
   }, [])
 
   console.log(drinks)
