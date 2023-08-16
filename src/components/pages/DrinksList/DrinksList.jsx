@@ -6,7 +6,7 @@ function DrinksList() {
   const [drinks, setDrinks] = useState({})
 
   useEffect(() => {
-    getAllDrinks(apiLink, setDrinks)
+    getAllDrinks(`${apiLink}`, setDrinks)
   }, [])
 
   if (!drinks.drinks) {
