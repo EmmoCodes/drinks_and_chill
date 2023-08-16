@@ -1,0 +1,45 @@
+.home article {
+  height: 30vh;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.home h2 {
+  font-family: playfairDisplay;
+  font-size: 3rem;
+}
+
+.home p {
+  font-family: montserrat;
+  font-style: 1rem;
+}
+
+.home_gin {
+  background-color: #6fc3df;
+}
+
+.home_vodka {
+  background-color: #8d82c4;
+}
+
+.home_rum {
+  background-color: #ec8d81;
+}
+
+.home_scotch {
+  background-color: #e7b788;
+}
+
+.home_alkoholfrei {
+  background-color: #8ea9e8;
+}
+
+.home_zufall {
+  background-color: #87c5a4;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=Home.css.map */
