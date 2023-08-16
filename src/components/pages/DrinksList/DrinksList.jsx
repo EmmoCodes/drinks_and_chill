@@ -1,24 +1,30 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { apiLink } from '../../../utils/Api/Api'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks'
+import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
 
 function DrinksList() {
-  const [drinks, setDrinks] = useState({})
+  const [drinks, setDrinks] = useState([])
+
+  const ingredient = useParams().ingredient
 
   useEffect(() => {
-    getAllDrinks(`${apiLink}`, setDrinks)
+    getAllDrinks(`${apiLink}/filter.php?i=${ingredient}`, setDrinks)
   }, [])
-
-  if (!drinks.drinks) {
-    return <p>is Loading...</p>
-  }
 
   console.log(drinks)
 
+  if (!ingredient) {
+    return <p>is Loading...</p>
+  }
+
   return (
-    <div>
-      <h1>Liste</h1>
-    </div>
+    <section>
+      {drinks.map(drink => (
+        <DrinksItem key={drink.idDrink} drink={drink} />
+      ))}
+    </section>
   )
 }
 

@@ -1,12 +1,16 @@
 import './Home.scss'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <section className="home">
-      <article className="home_gin">
-        <h2>Gin</h2>
-        <p>Wacholder-geprägter Kräuter-Spirituose</p>
-      </article>
+      <Link to="cocktails/gin">
+        <article className="home_gin">
+          <h2>Gin</h2>
+          <p>Wacholder-geprägter Kräuter-Spirituose</p>
+        </article>
+      </Link>
       <article className="home_vodka">
         <h2>Vodka</h2>
         <p>Klar, neutral, vielseitig einsetzbar</p>
