@@ -1,0 +1,15 @@
+.sticky_navbar {
+  //background-color: #262b46;
+  max-height: 4vh;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    max-height: 30px;
+  }
+}

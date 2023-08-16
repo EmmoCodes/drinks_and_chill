@@ -14,13 +14,13 @@
   font-style: 1rem;
 }
 
-.home article:nth-of-type(odd) {
-  background-color: #000;
+.home:nth-of-type(odd) article {
+  background-color: blue;
   color: #fff;
 }
 
-.home article:nth-of-type(even) {
-  background-color: #fff;
+.home_link:nth-of-type(even) article {
+  background-color: red;
   color: #000;
 }
 
