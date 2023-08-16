@@ -1,13 +1,4 @@
 import React from 'react'
-
-
-
-  
-    
-      
-      
-   
-
 import { Link } from 'react-router-dom'
 import './DrinksItem.scss'
 
@@ -21,7 +12,6 @@ function DrinksItem({ drink }) {
         </div>
       </Link>
     </>
-
   )
 }
 

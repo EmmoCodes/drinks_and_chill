@@ -17,7 +17,31 @@ function DrinksDetails() {
   }
   console.log(drinkDetails)
 
-  return <section></section>
+  return (
+    <section>
+      <h1>{drinkDetails.strDrink}</h1>
+      <img src={drinkDetails.strDrinkThumb} alt={drinkDetails.strDrink} />
+      <h2>Zutaten</h2>
+      <ul style={{ display: 'absolute' }}>
+        <li>{drinkDetails.strIngredient1}</li>
+        <li>{drinkDetails.strIngredient2}</li>
+        <li>{drinkDetails.strIngredient3}</li>
+        <li>{drinkDetails.strIngredient4}</li>
+        <li>{drinkDetails.strIngredient5}</li>
+        <li>{drinkDetails.strIngredient6}</li>
+        <li>{drinkDetails.strIngredient7}</li>
+        <li>{drinkDetails.strIngredient8}</li>
+        <li>{drinkDetails.strIngredient9}</li>
+        <li>{drinkDetails.strIngredient10}</li>
+        <li>{drinkDetails.strIngredient11}</li>
+        <li>{drinkDetails.strIngredient12}</li>
+        <li>{drinkDetails.strIngredient13}</li>
+        <li>{drinkDetails.strIngredient14}</li>
+        <li>{drinkDetails.strIngredient15}</li>
+      </ul>
+      <p>{drinkDetails.strInstructionsDE}</p>
+    </section>
+  )
 }
 
 export default DrinksDetails
