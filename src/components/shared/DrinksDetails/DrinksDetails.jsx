@@ -2,7 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks.js'
 import { apiLink } from '../../../utils/Api/Api.js'
+
 import './DrinksDetails.scss'
+
+import NavbarDetails from '../NavbarDetails/NavbarDetails.jsx'
+
 
 function DrinksDetails() {
   const [drinkDetails, setDrinkDetails] = useState({})
@@ -18,6 +22,7 @@ function DrinksDetails() {
   }
 
   return (
+
     <section
       style={{ background: `center/cover no-repeat url("${drinkDetails.strDrinkThumb}")` }}
       className="drinks_details">
@@ -43,6 +48,7 @@ function DrinksDetails() {
         </ul>
         <h3>{drinkDetails.strInstructionsDE}</h3>
       </div>
+
     </section>
   )
 }
