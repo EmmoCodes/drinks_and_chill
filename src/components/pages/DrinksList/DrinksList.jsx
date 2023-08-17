@@ -4,8 +4,7 @@ import { apiLink } from '../../../utils/Api/Api'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks'
 import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
 import './DrinksList.scss'
-import Navbar from '../../shared/navbar/Navbar'
-import Footer from '../../shared/footer/Footer'
+import NavbarMobile from '../../shared/navbarMobile/NavbarMobile'
 
 function DrinksList() {
   const [drinks, setDrinks] = useState([])
@@ -22,11 +21,10 @@ function DrinksList() {
 
   return (
     <section className="drink_list">
-      <Navbar />
       {drinks.map(drink => (
         <DrinksItem key={drink.idDrink} drink={drink} />
       ))}
-      <Footer />
+      <NavbarMobile />
     </section>
   )
 }
