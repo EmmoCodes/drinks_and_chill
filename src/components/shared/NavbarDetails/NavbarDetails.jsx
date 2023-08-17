@@ -3,8 +3,6 @@ import homeIcon from '../../../assets/images/home.png'
 import { Link, useNavigate } from 'react-router-dom'
 import backIcon from '../../../assets/images/back.png'
 import './NavbarDetails.scss'
-import Lupe from '../../../assets/images/lupe.png'
-import { SearchContext } from '../../context/SearchContext.jsx'
 
 function NavbarDetails() {
   const navigate = useNavigate()

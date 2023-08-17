@@ -6,16 +6,18 @@ import './NavbarMobile.scss'
 import Lupe from '../../../assets/images/lupe.png'
 import { SearchContext } from '../../context/SearchContext.jsx'
 
-function NavbarMobile() {
+function NavbarMobile({ drinks }) {
   const navigate = useNavigate()
 
   const { searchInput, handleSearchInput } = useContext(SearchContext)
 
   const [hideToggle, setHideToggle] = useState(true)
 
+  console.log(searchInput)
   return (
     <nav className="sticky_navbar">
       <img onClick={() => navigate(-1)} src={backIcon} alt="" className={hideToggle ? 'show' : 'hide'} />
+      <label htmlFor="search" className="hide"></label>
       <input
         onChange={handleSearchInput}
         className={hideToggle ? 'hide' : 'show search_input '}
@@ -34,7 +36,6 @@ function NavbarMobile() {
       <Link to="/">
         <img src={homeIcon} alt="Home Icon" className={hideToggle ? 'show' : 'hide'} />
       </Link>
-      <label htmlFor="search" className="hide"></label>
     </nav>
   )
 }
