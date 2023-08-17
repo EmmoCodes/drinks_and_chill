@@ -12,8 +12,16 @@ function DrinksDetails() {
 
   const detailId = useParams().id
 
+  // useEffect(() => {
+  //   getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
+  // }, [])
+
   useEffect(() => {
-    getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
+    if (detailId === 'random.php') {
+      getAllDrinks(`${apiLink}/${detailId}`, setDrinkDetails, '0')
+    } else {
+      getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
+    }
   }, [])
 
   if (!detailId) {

@@ -14,11 +14,7 @@ function DrinksList() {
   const { ingredient } = useParams()
 
   useEffect(() => {
-    if (ingredient === 'random.php') {
-      getAllDrinks(`${apiLink}/${ingredient}`, setDrinks)
-    } else {
-      getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
-    }
+    getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
   }, [])
 
   if (!ingredient) {
