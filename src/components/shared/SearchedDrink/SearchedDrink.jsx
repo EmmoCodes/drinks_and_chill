@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks.js'
 import { apiLink } from '../../../utils/Api/Api.js'
 import NavbarDetails from '../NavbarDetails/NavbarDetails.jsx'
-import './searchedDrink.scss'
+import './SearchedDrink.scss'
 
 function SearchedDrink() {
   const [searchedDrink, setSearchedDrink] = useState([])
