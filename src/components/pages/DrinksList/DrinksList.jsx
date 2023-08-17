@@ -6,14 +6,19 @@ import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
 import './DrinksList.scss'
 import Navbar from '../../shared/navbar/Navbar'
 import Footer from '../../shared/footer/Footer'
+import NavbarDetails from '../../shared/NavbarDetails/NavbarDetails.jsx'
 
 function DrinksList() {
   const [drinks, setDrinks] = useState([])
 
-  const ingredient = useParams().ingredient
+  const { ingredient } = useParams()
 
   useEffect(() => {
-    getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
+    if (ingredient === 'random.php') {
+      getAllDrinks(`${apiLink}/${ingredient}`, setDrinks)
+    } else {
+      getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
+    }
   }, [])
 
   if (!ingredient) {
@@ -22,10 +27,10 @@ function DrinksList() {
 
   return (
     <section className="drink_list">
-      <Navbar />
       {drinks.map(drink => (
         <DrinksItem key={drink.idDrink} drink={drink} />
       ))}
+      <NavbarDetails />
       <Footer />
     </section>
   )
