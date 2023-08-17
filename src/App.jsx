@@ -12,6 +12,7 @@ function App() {
 
   const handleSearchInput = event => {
     setSearchInput(event.target.value.toLowerCase())
+    console.log(searchInput)
   }
 
   return (

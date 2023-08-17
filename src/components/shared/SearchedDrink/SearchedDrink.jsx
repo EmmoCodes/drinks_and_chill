@@ -12,7 +12,10 @@ function SearchedDrink() {
   useEffect(() => {
     getAllDrinks(`${apiLink}/search.php?s=${drinkName}`, setSearchedDrink, '0')
   }, [])
-  console.log(searchedDrink)
+
+  if (!searchedDrink) {
+    ;<p>Is Loading....</p>
+  }
 
   return (
     <>

@@ -4,12 +4,28 @@
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
-  overflow: hidden;
   align-items: center;
+  overflow: hidden;
 
   img {
     max-height: 25px;
   }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: initial;
+}
+
+.search_input {
+  bottom: 50px;
+  left: 120px;
+  width: 250px;
+  height: 3vh;
+  color: #262b46;
 }

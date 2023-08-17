@@ -17,27 +17,24 @@ const Navbar = () => {
     getAllDrinks(`${apiLink}/search.php?s=${searchInput}`, setSearchedDrink, '0')
   }
 
-  console.log(searchedDrink)
   return (
-    <>
-      <section className="navbar">
-        <div>
-          <h2>DRINKS & CHILL</h2>
-          <Link to="/">
-            <img src={homeIcon} alt="Home Icon" />
-          </Link>
-        </div>
-        <h1>Cocktails & Getränke!</h1>
-        <p>Herzlich Willkommen in der Welt der Cocktails und Getränke!</p>
-        <form>
-          <input onChange={handleSearchInput} type="text" name="inp_user" id="inp_user" placeholder="type something" />
-          <button onClick={searchInputFetch}>Search</button>
-          <Link to={`/searched/${searchedDrink.strDrink}`}>
-            <h2>{searchedDrink.strDrink}</h2>
-          </Link>
-        </form>
-      </section>
-    </>
+    <section className="navbar">
+      <div>
+        <h2>DRINKS & CHILL</h2>
+        <Link to="/">
+          <img src={homeIcon} alt="Home Icon" />
+        </Link>
+      </div>
+      <h1>Cocktails & Getränke!</h1>
+      <p>Herzlich Willkommen in der Welt der Cocktails und Getränke!</p>
+      <form>
+        <input onChange={handleSearchInput} type="text" name="inp_user" id="inp_user" placeholder="type something" />
+        <button onClick={searchInputFetch}>Search</button>
+        <Link to={`/searched/${searchedDrink.strDrink}`}>
+          <h2>{searchedDrink.strDrink}</h2>
+        </Link>
+      </form>
+    </section>
   )
 }
 
