@@ -1,15 +1,19 @@
 .sticky_navbar {
   background-color: #262b46;
+
   color: #ffe81e;
   font-family: playfairDisplay;
   min-height: 5vh;
+
   position: fixed;
   bottom: 0;
   display: flex;
   justify-content: space-around;
   width: 100%;
   overflow: hidden;
+
   align-items: center;
+
 
   img {
     max-height: 25px;

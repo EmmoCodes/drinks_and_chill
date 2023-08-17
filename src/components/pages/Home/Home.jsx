@@ -2,6 +2,7 @@ import './Home.scss'
 import { Link } from 'react-router-dom'
 import Navbar from '../../shared/navbar/Navbar'
 import Footer from '../../shared/footer/Footer'
+import { useContext } from 'react'
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
           <p>Ohne Alkohol, erfrischend, vielfältig</p>
         </article>
       </Link>
-      <Link to="cocktails/random">
+      <Link to="/details/random.php">
         <article className="home_zufall">
           <h2>Zufall</h2>
           <p>Unvorhersehbar, ungeplant, überraschend</p>

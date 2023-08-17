@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks.js'
 import { apiLink } from '../../../utils/Api/Api.js'
 import NavbarDetails from '../NavbarDetails/NavbarDetails.jsx'
+
 import './DrinksDetails.scss'
 
 function DrinksDetails() {
@@ -11,7 +12,11 @@ function DrinksDetails() {
   const detailId = useParams().id
 
   useEffect(() => {
-    getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
+    if (detailId === 'random.php') {
+      getAllDrinks(`${apiLink}/${detailId}`, setDrinkDetails, '0')
+    } else {
+      getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
+    }
   }, [])
 
   if (!detailId) {
