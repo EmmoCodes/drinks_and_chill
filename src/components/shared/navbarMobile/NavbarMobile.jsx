@@ -6,7 +6,9 @@ import './NavbarMobile.scss'
 import Lupe from '../../../assets/images/lupe.png'
 import { SearchContext } from '../../context/SearchContext.jsx'
 
+
 function NavbarMobile({ drinks }) {
+
   const navigate = useNavigate()
 
   const { searchInput, handleSearchInput } = useContext(SearchContext)
