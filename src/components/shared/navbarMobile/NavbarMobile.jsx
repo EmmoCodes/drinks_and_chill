@@ -2,7 +2,7 @@ import React from 'react'
 import homeIcon from '../../../assets/images/home.png'
 import { Link, useNavigate } from 'react-router-dom'
 import backIcon from '../../../assets/images/back.png'
-import './NavbarDetails.scss'
+import './NavbarMobile.scss'
 import Lupe from '../../../assets/images/lupe.png'
 
 function NavbarDetails() {
@@ -10,7 +10,7 @@ function NavbarDetails() {
   return (
     <nav className="sticky_navbar">
       <img onClick={() => navigate(-1)} src={backIcon} alt="" />
-      <p>Drinks&Chill</p>
+      <img src={Lupe} />
       <Link to="/">
         <img src={homeIcon} alt="Home Icon" />
       </Link>

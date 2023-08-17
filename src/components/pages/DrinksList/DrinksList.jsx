@@ -4,9 +4,9 @@ import { apiLink } from '../../../utils/Api/Api'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks'
 import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
 import './DrinksList.scss'
-import Navbar from '../../shared/navbar/Navbar'
-import Footer from '../../shared/footer/Footer'
-import NavbarDetails from '../../shared/NavbarDetails/NavbarDetails.jsx'
+
+import NavbarMobile from '../../shared/navbarMobile/NavbarMobile'
+
 
 function DrinksList() {
   const [drinks, setDrinks] = useState([])
@@ -26,8 +26,9 @@ function DrinksList() {
       {drinks.map(drink => (
         <DrinksItem key={drink.idDrink} drink={drink} />
       ))}
-      <NavbarDetails />
-      <Footer />
+
+      <NavbarMobile />
+
     </section>
   )
 }
