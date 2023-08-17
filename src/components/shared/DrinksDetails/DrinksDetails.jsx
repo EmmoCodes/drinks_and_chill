@@ -6,15 +6,10 @@ import NavbarDetails from '../NavbarDetails/NavbarDetails.jsx'
 
 import './DrinksDetails.scss'
 
-
 function DrinksDetails() {
   const [drinkDetails, setDrinkDetails] = useState({})
 
   const detailId = useParams().id
-
-  // useEffect(() => {
-  //   getAllDrinks(`${apiLink}/lookup.php?i=${detailId}`, setDrinkDetails, '0')
-  // }, [])
 
   useEffect(() => {
     if (detailId === 'random.php') {

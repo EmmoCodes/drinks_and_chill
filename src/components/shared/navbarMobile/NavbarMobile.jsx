@@ -5,7 +5,7 @@ import backIcon from '../../../assets/images/back.png'
 import './NavbarMobile.scss'
 import Lupe from '../../../assets/images/lupe.png'
 
-function NavbarDetails() {
+function NavbarMobile() {
   const navigate = useNavigate()
   return (
     <nav className="sticky_navbar">
@@ -18,4 +18,4 @@ function NavbarDetails() {
   )
 }
 
-export default NavbarDetails
+export default NavbarMobile

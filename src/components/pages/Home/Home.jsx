@@ -2,6 +2,7 @@ import './Home.scss'
 import { Link } from 'react-router-dom'
 import Navbar from '../../shared/navbar/Navbar'
 import Footer from '../../shared/footer/Footer'
+import { useContext } from 'react'
 
 const Home = () => {
   return (
