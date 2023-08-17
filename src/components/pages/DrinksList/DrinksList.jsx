@@ -4,12 +4,14 @@ import { apiLink } from '../../../utils/Api/Api'
 import { getAllDrinks } from '../../../utils/GetAllDrinks/GetAllDrinks'
 import DrinksItem from '../../DrinksItems/DrinksItem.jsx'
 import './DrinksList.scss'
+
 import NavbarMobile from '../../shared/navbarMobile/NavbarMobile'
+
 
 function DrinksList() {
   const [drinks, setDrinks] = useState([])
 
-  const ingredient = useParams().ingredient
+  const { ingredient } = useParams()
 
   useEffect(() => {
     getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
@@ -24,7 +26,9 @@ function DrinksList() {
       {drinks.map(drink => (
         <DrinksItem key={drink.idDrink} drink={drink} />
       ))}
+
       <NavbarMobile />
+
     </section>
   )
 }
