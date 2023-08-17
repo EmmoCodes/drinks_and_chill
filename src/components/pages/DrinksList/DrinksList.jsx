@@ -14,10 +14,14 @@ function DrinksList() {
   const { searchInput, handleSearchInput } = useContext(SearchContext)
 
   useEffect(() => {
-    if (searchInput === '') {
+    const searchTimeout = setTimeout(() => {
       getAllDrinks(`${apiLink}/filter.php?${ingredient}`, setDrinks)
-    } else if (searchInput !== '') {
-      getAllDrinks(`${apiLink}/search.php?f=${searchInput}`, setDrinks)
+      if (searchInput !== '') {
+        getAllDrinks(`${apiLink}/search.php?f=${searchInput}`, setDrinks)
+      }
+    }, 300)
+    return () => {
+      clearTimeout(searchTimeout)
     }
   }, [searchInput])
 
