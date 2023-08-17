@@ -40,18 +40,22 @@
 }
 
 .navbar form {
-  padding-left: 2rem;
+  width: 100%;
+}
+
+.navbar article {
   display: flex;
-  gap: 10px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .navbar input {
   font-family: montserrat;
-  line-height: 2rem;
   color: #262b46;
   border-radius: 10px;
   text-align: center;
   border: 1px solid black;
+  min-height: 2rem;
 }
 
 .navbar button {
@@ -62,5 +66,9 @@
   border-radius: 10px;
   background-color: #6fc3df;
   color: #262b46;
+  max-height: 2rem;
 }
 
+.searched_cocktail {
+  text-align: center;
+}

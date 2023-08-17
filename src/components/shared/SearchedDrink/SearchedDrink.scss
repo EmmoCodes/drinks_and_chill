@@ -1,0 +1,45 @@
+.searched_drink {
+  min-height: 95vh;
+}
+
+.searched_drink div {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 95vh;
+  position: relative;
+}
+
+.searched_drink h1 {
+  font-family: montserrat;
+  font-size: 2rem;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+.searched_drink h2 {
+  font-family: playfairDisplay;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+
+.searched_drink li {
+  font-family: playfairDisplay;
+}
+
+.searched_drink h3 {
+  font-size: 1rem;
+  padding: 0 2rem 4rem 2rem;
+  bottom: 0;
+  position: absolute;
+  line-height: 2rem;
+  width: 100%;
+  font-family: playfairDisplay;
+}
+
+.searched_drink {
+  h1,
+  h2,
+  h3,
+  li {
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -27,13 +27,15 @@ const Navbar = () => {
       </div>
       <h1>Cocktails & Getränke!</h1>
       <p>Herzlich Willkommen in der Welt der Cocktails und Getränke!</p>
-      <form>
-        <input onChange={handleSearchInput} type="text" name="inp_user" id="inp_user" placeholder="type something" />
-        <button onClick={searchInputFetch}>Search</button>
-        <Link to={`/searched/${searchedDrink.strDrink}`}>
-          <h2>{searchedDrink.strDrink}</h2>
-        </Link>
-      </form>
+      <article>
+        <form>
+          <input onChange={handleSearchInput} type="text" name="inp_user" id="inp_user" placeholder="type something" />
+          <button onClick={searchInputFetch}>Search</button>
+        </form>
+      </article>
+      <Link className="searched_cocktail" to={`/searched/${searchedDrink.strDrink}`}>
+        <h2>{searchedDrink.strDrink}</h2>
+      </Link>
     </section>
   )
 }
