@@ -12,7 +12,7 @@ Welcome to the Drinks and Chill website! Here, you'll find everything you need t
 ### Contact
 
 ## 1. Introduction
-[ ] The Drinks and Chill website is your go-to resource for all things related to drinks. Whether you're a seasoned mixologist or just looking for a refreshing beverage to enjoy on a lazy afternoon, our website has something for everyone.
+* The Drinks and Chill website is your go-to resource for all things related to drinks. Whether you're a seasoned mixologist or just looking for a refreshing beverage to enjoy on a lazy afternoon, our website has something for everyone.
 
 ## 2. Features
 [ ] Cocktail Recipes: Browse through an extensive collection of cocktail recipes from classic to contemporary. Each recipe comes with detailed instructions, ingredients, and serving suggestions.
