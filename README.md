@@ -1,5 +1,8 @@
 
-# Drinks and Chill Website
+# Drinks and Chill Website 
+## Project from SuperCode GmbH
+## designed for iphone XR
+## Duration for the Project: 2 days
 Welcome to the Drinks and Chill website! Here, you'll find everything you need to unwind, relax, and enjoy your favorite beverages. Whether you're looking for cocktail recipes, learning about different types of beer and spirits, or simply want to discover a new drink to try, we've got you covered.
 
 ### Table of Contents
